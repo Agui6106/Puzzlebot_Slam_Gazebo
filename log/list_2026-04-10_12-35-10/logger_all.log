@@ -1,0 +1,80 @@
+[1.405s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/josea/puzzlebot_ws']
+[1.405s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/josea/puzzlebot_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a9099573cd0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7a909967bf40>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7a909967bf40>>, mixin_verb=('list',))
+[3.974s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.978s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.978s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.978s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.978s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.978s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/josea/puzzlebot_ws'
+[3.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extensions ['ignore', 'ignore_ament_install']
+[3.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'ignore'
+[3.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'ignore_ament_install'
+[3.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extensions ['colcon_pkg']
+[3.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'colcon_pkg'
+[3.985s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extensions ['colcon_meta']
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'colcon_meta'
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extensions ['ros']
+[3.986s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'ros'
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extensions ['cmake', 'python']
+[4.146s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'cmake'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'python'
+[4.155s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extensions ['python_setup_py']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws) by extension 'python_setup_py'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/build) by extension 'ignore'
+[4.156s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/build) ignored
+[4.168s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/install) by extension 'ignore'
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/install) ignored
+[4.169s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/log) by extension 'ignore'
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/log) ignored
+[4.181s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'ignore'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'ignore_ament_install'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extensions ['colcon_pkg']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'colcon_pkg'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extensions ['colcon_meta']
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'colcon_meta'
+[4.182s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extensions ['ros']
+[4.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'ros'
+[4.192s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extensions ['cmake', 'python']
+[4.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'cmake'
+[4.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'python'
+[4.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extensions ['python_setup_py']
+[4.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src) by extension 'python_setup_py'
+[4.193s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extensions ['ignore', 'ignore_ament_install']
+[4.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'ignore'
+[4.209s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'ignore_ament_install'
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extensions ['colcon_pkg']
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'colcon_pkg'
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extensions ['colcon_meta']
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'colcon_meta'
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extensions ['ros']
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'ros'
+[4.210s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extensions ['cmake', 'python']
+[4.211s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'cmake'
+[4.217s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'python'
+[4.218s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extensions ['python_setup_py']
+[4.224s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2) by extension 'python_setup_py'
+[4.227s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extensions ['ignore', 'ignore_ament_install']
+[4.236s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extension 'ignore'
+[4.237s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extension 'ignore_ament_install'
+[4.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extensions ['colcon_pkg']
+[4.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extension 'colcon_pkg'
+[4.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extensions ['colcon_meta']
+[4.242s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extension 'colcon_meta'
+[4.256s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extensions ['ros']
+[4.256s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description) by extension 'ros'
+[4.356s] DEBUG:colcon.colcon_core.package_identification:Package '/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_description' with type 'ros.ament_cmake' and name 'puzzlebot_description'
+[4.357s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[4.357s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extension 'ignore'
+[4.357s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extension 'ignore_ament_install'
+[4.357s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extensions ['colcon_pkg']
+[4.370s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extension 'colcon_pkg'
+[4.370s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extensions ['colcon_meta']
+[4.370s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extension 'colcon_meta'
+[4.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extensions ['ros']
+[4.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo) by extension 'ros'
+[4.384s] DEBUG:colcon.colcon_core.package_identification:Package '/home/josea/puzzlebot_ws/src/puzzleot_ros2/puzzlebot_gazebo' with type 'ros.ament_cmake' and name 'puzzlebot_gazebo'
+[4.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
