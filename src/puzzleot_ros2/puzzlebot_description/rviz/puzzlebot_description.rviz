@@ -1,0 +1,42 @@
+# RViz configuration for the puzzlebot_description package (MADE WITH AI PLS REVIEW!!!!)
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Description: ""
+      Enabled: true
+      Name: Robot Model
+      Robot Description: robot_description
+      TF Prefix: ""
+    - Alpha: 1
+      Class: rviz/Grid
+      Cell Size: 1
+      Color: 160; 160; 160
+      Description: ""
+      Enabled: true
+      Line Style: Lines
+      Name: Grid
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+  Enabled: true
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+    - Class: rviz/SetGoal
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 10
+      Focal Point: 0; 0; 0
+      Name: Orbit (rviz)
+      Pitch: 0.785
+      Yaw: 0
+    Saved: []
