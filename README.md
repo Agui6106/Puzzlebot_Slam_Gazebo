@@ -95,3 +95,32 @@ This package contains the **navigation stack configuration**, including SLAM and
 - `launch/` → Launch files for SLAM and navigation
 - `maps/` → Generated or predefined maps
 - `rviz/` → RViz configurations for SLAM and Nav2
+
+
+---
+
+### 🔧 Known Troubleshooting:
+
+### 🔹 `CMake Error: The source directory does not exist.s`
+If you encounter an error similar to:
+
+```
+CMake Error: The source directory "... does not exist."
+```
+
+This issue is usually caused by outdated or corrupted build cache files (`build/`, `install/`, `log/`) that still reference old or renamed directories.
+
+#### ✅ Solution
+
+Clean the workspace and rebuild:
+
+```bash
+rm -rf build install log
+colcon build
+```
+
+This will remove cached CMake configurations and force a fresh build with the correct project structure.
+
+#### 💡 Recommendation
+
+After pulling new changes (especially from `develop`), it is recommended to run the clean build command above to avoid inconsistencies caused by stale cache files.
