@@ -54,10 +54,9 @@
             </plane>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
         </visual>
         <self_collide>0</self_collide>
@@ -95,10 +94,10 @@
         <collision name='Wall_100_Collision'>
           <geometry>
             <box>
-              <size>1.25 0.02 2.5</size>
+              <size>1.25 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -114,18 +113,16 @@
           </surface>
         </collision>
         <visual name='Wall_100_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>1.25 0.02 2.5</size>
+              <size>1.25 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -140,10 +137,10 @@
         <collision name='Wall_102_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -159,18 +156,16 @@
           </surface>
         </collision>
         <visual name='Wall_102_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -185,10 +180,10 @@
         <collision name='Wall_106_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -204,18 +199,16 @@
           </surface>
         </collision>
         <visual name='Wall_106_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -230,10 +223,10 @@
         <collision name='Wall_110_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -249,18 +242,16 @@
           </surface>
         </collision>
         <visual name='Wall_110_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -275,10 +266,10 @@
         <collision name='Wall_112_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -294,18 +285,16 @@
           </surface>
         </collision>
         <visual name='Wall_112_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -320,10 +309,10 @@
         <collision name='Wall_114_Collision'>
           <geometry>
             <box>
-              <size>1.37 0.02 2.5</size>
+              <size>1.37 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -339,18 +328,16 @@
           </surface>
         </collision>
         <visual name='Wall_114_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>1.37 0.02 2.5</size>
+              <size>1.37 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -365,10 +352,10 @@
         <collision name='Wall_116_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -384,18 +371,16 @@
           </surface>
         </collision>
         <visual name='Wall_116_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -410,10 +395,10 @@
         <collision name='Wall_67_Collision'>
           <geometry>
             <box>
-              <size>3.20511 0.02 2.5</size>
+              <size>3.20511 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -429,18 +414,16 @@
           </surface>
         </collision>
         <visual name='Wall_67_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>3.20511 0.02 2.5</size>
+              <size>3.20511 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -455,10 +438,10 @@
         <collision name='Wall_69_Collision'>
           <geometry>
             <box>
-              <size>3.17 0.02 2.5</size>
+              <size>3.17 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -474,18 +457,16 @@
           </surface>
         </collision>
         <visual name='Wall_69_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>3.17 0.02 2.5</size>
+              <size>3.17 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -500,10 +481,10 @@
         <collision name='Wall_71_Collision'>
           <geometry>
             <box>
-              <size>3.17 0.02 2.5</size>
+              <size>3.17 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -519,18 +500,16 @@
           </surface>
         </collision>
         <visual name='Wall_71_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>3.17 0.02 2.5</size>
+              <size>3.17 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -545,10 +524,10 @@
         <collision name='Wall_72_Collision'>
           <geometry>
             <box>
-              <size>3.2 0.02 2.5</size>
+              <size>3.2 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -564,18 +543,16 @@
           </surface>
         </collision>
         <visual name='Wall_72_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>3.2 0.02 2.5</size>
+              <size>3.2 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -590,10 +567,10 @@
         <collision name='Wall_79_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -609,18 +586,16 @@
           </surface>
         </collision>
         <visual name='Wall_79_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -635,10 +610,10 @@
         <collision name='Wall_81_Collision'>
           <geometry>
             <box>
-              <size>0.620007 0.02 2.5</size>
+              <size>0.620007 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -654,18 +629,16 @@
           </surface>
         </collision>
         <visual name='Wall_81_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.620007 0.02 2.5</size>
+              <size>0.620007 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -680,10 +653,10 @@
         <collision name='Wall_89_Collision'>
           <geometry>
             <box>
-              <size>0.698494 0.02 2.5</size>
+              <size>0.698494 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -699,18 +672,16 @@
           </surface>
         </collision>
         <visual name='Wall_89_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.698494 0.02 2.5</size>
+              <size>0.698494 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -725,10 +696,10 @@
         <collision name='Wall_91_Collision'>
           <geometry>
             <box>
-              <size>1.25 0.02 2.5</size>
+              <size>1.25 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -744,18 +715,16 @@
           </surface>
         </collision>
         <visual name='Wall_91_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>1.25 0.02 2.5</size>
+              <size>1.25 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -770,10 +739,10 @@
         <collision name='Wall_96_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -789,18 +758,16 @@
           </surface>
         </collision>
         <visual name='Wall_96_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
@@ -815,10 +782,10 @@
         <collision name='Wall_98_Collision'>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -834,18 +801,16 @@
           </surface>
         </collision>
         <visual name='Wall_98_Visual'>
-          <pose>0 0 1.25 0 -0 0</pose>
+          <pose>0 0 0.15 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.62 0.02 2.5</size>
+              <size>0.62 0.02 .4</size>
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.996078 0.47451 0.0196078 1</ambient>
+            <ambient>1 0 0 1</ambient>   <!-- rojo -->
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
           </material>
           <meta>
             <layer>0</layer>
