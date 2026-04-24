@@ -15,7 +15,7 @@
                 <wheel_separation>0.19</wheel_separation>
                 <wheel_radius>0.05</wheel_radius>
                 <topic>${prefix}cmd_vel</topic>
-                <tf_topic>${prefix}diff_drive/tf<tf_topic>
+                <tf_topic>${prefix}diff_drive/tf</tf_topic>
                 <odom>${prefix}odom</odom>
                 <frame_id>${prefix}odom</frame_id>
                 <child_frame_id>${prefix}base_footprint</child_frame_id>

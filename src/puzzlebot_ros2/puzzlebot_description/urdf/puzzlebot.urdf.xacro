@@ -3,11 +3,11 @@
 
     <xacro:arg name="prefix" default="" />
 
-    <-- LINKS AND JOINTS BASE AND WHEELS -->
+    <!-- LINKS AND JOINTS BASE AND WHEELS -->
     <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_core.xacro"/> 
-    <-- CONTROL W/GAZEBO -->
+    <!-- CONTROL W/GAZEBO -->
     <xacro:include filename="$(find puzzlebot_description)/urdf/puzzlebot_control.xacro"/> 
 
-    <xacro:puzzlebot_control prefix="$(arg prefix)">
+    <xacro:puzzlebot_control prefix="$(arg prefix)"/>
 
 </robot>
