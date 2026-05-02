@@ -6,7 +6,7 @@ amcl:
     alpha3: 0.05 # -- RELEVANT --
     alpha4: 0.05 # -- RELEVANT --
     alpha5: 0.02 # -- RELEVANT --
-    base_frame_id: "base_footprint"
+    base_frame_id: "base_footprint" # -- RELEVANT --
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
@@ -105,8 +105,8 @@ controller_server:
   ros__parameters:
     use_sim_time: True # -- RELEVANT --
     controller_frequency: 10.0
-    min_x_velocity_threshold: 0.001
-    min_y_velocity_threshold: 0.5 # -- RELEVANT --
+    min_x_velocity_threshold: 0.001 # -- RELEVANT --
+    min_y_velocity_threshold: 0.5 
     min_theta_velocity_threshold: 0.001
     failure_tolerance: 0.3 # -- RELEVANT --
     progress_checker_plugins: ["progress_checker"]
@@ -207,7 +207,7 @@ global_costmap:
       update_frequency: 1.0
       publish_frequency: 1.0
       global_frame: map
-      robot_base_frame: base_footprint
+      robot_base_frame: base_footprint # -- RELEVANT --
       transform_tolerance: 0.5
       robot_radius: 0.10 # -- RELEVANT --
       resolution: 0.05 # -- RELEVANT --
