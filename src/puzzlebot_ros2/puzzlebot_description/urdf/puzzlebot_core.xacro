@@ -1,91 +1,123 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <!-- BASE FOOTPRINT -->
+    <xacro:macro name="puzzlebot_core" params="prefix">
+    
+        <!-- BASE FOOTPRINT -->
+        <link name="${prefix}base_footprint"></link>
 
-   <link name="base_footprint"></link>
+        <!-- BASE LINK -->
 
-    <!-- BASE LINK -->
+        <link name="${prefix}base_link">
+            <visual>
+                <geometry>
+                    <mesh filename="file://$(find puzzlebot_description)/meshes/Puzzlebot_Jetson_Lidar_Edition_Base.stl"/>
+                </geometry>
+                <material name="orange"/>
+            </visual>
+            <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <box size="0.2 0.16 0.0503"/>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.351"/>
+                <xacro:box_inertia mass="0.351" x="0.2" y="0.16" z="0.0503"/>
+            </inertial>
+        </link>
 
-   <link name="base_link">
-        <visual>
-            <geometry>
-                <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Jetson_Lidar_Edition_Base.stl"/>
-            </geometry>
-            <material name="yellow">
-                <color rgba="0.8 0.8 0.05 1.0"/>
-            </material>
-        </visual>
-    </link>
+        <joint name="${prefix}base_link_joint" type="fixed">
+            <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
+            <parent link="${prefix}base_footprint"/>
+            <child link="${prefix}base_link"/>
+        </joint>
 
-    <joint name="base_link_joint" type="fixed">
-        <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
-        <parent link="base_footprint"/>
-        <child link="base_link"/>
-    </joint>
+        <!-- LEFT WHEEL -->
 
-    <!-- LEFT WHEEL -->
+        <link name="${prefix}left_wheel_link">
+            <visual>
+                <origin rpy="1.57 0.0 0.0"/>
+                <geometry>
+                    <mesh filename="file://$(find puzzlebot_description)/meshes/Puzzlebot_Wheel.stl"/>
+                </geometry>
+                <material name="orange"/>
+            </visual>
+            <collision>
+            <origin rpy="1.5707 0.0 0.0"/>
+                <geometry>
+                    <cylinder radius="0.05" length="0.012"/>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.027"/>
+                <xacro:cylinder_inertia radius="0.05" height="0.012" mass="0.027"/>
+            </inertial>
+        </link>
 
-    <link name="left_wheel_link">
-        <visual>
-            <origin rpy="1.57 0.0 0.0"/>
-            <geometry>
-                <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Wheel.stl"/>
-            </geometry>
-            <material name="yellow">
-                <color rgba="0.8 0.8 0.05 1.0"/>
-            </material>
-        </visual>
-    </link>
+        <joint name="${prefix}left_wheel_joint" type="continuous">
+            <parent link="${prefix}base_link"/>
+            <child link="${prefix}left_wheel_link"/>
+            <origin xyz="0.052 0.095 -0.0025"/>
+            <axis xyz="0.0 1.0 0.0"/>
+            
+        </joint>
 
-    <joint name="left_wheel_joint" type="continuous">
-        <parent link="base_link"/>
-        <child link="left_wheel_link"/>
-        <origin xyz="0.052 0.095 -0.0025"/>
-        <axis xyz="0.0 1.0 0.0"/>
-        
-    </joint>
+        <!-- RIGHT WHEEL -->
 
-    <!-- RIGHT WHEEL -->
+        <link name="${prefix}right_wheel_link">
+            <visual>
+                <origin rpy="-1.57 0.0 0.0"/>
+                <geometry>
+                    <mesh filename="file://$(find puzzlebot_description)/meshes/Puzzlebot_Wheel.stl"/>
+                </geometry>
+                <material name="orange"/>
+            </visual>
+            <collision>
+            <origin rpy="1.5707 0.0 0.0"/>
+                <geometry>
+                    <cylinder radius="0.05" length="0.012"/>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.027"/>
+                <xacro:cylinder_inertia radius="0.05" height="0.012" mass="0.027"/>
+            </inertial>
+        </link>
 
-    <link name="right_wheel_link">
-        <visual>
-            <origin rpy="-1.57 0.0 0.0"/>
-            <geometry>
-                <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Wheel.stl"/>
-            </geometry>
-            <material name="yellow">
-                <color rgba="0.8 0.8 0.05 1.0"/>
-            </material>
-        </visual>
-    </link>
+        <joint name="${prefix}right_wheel_joint" type="continuous">
+            <parent link="${prefix}base_link"/>
+            <child link="${prefix}right_wheel_link"/>
+            <origin xyz="0.052 -0.095 -0.0025"/>
+            <axis xyz="0.0 1.0 0.0"/>
+            
+        </joint>
 
-    <joint name="right_wheel_joint" type="continuous">
-        <parent link="base_link"/>
-        <child link="right_wheel_link"/>
-        <origin xyz="0.052 -0.095 -0.0025"/>
-        <axis xyz="0.0 1.0 0.0"/>
-        
-    </joint>
+        <!-- CASTER  WHEEL -->
 
-    <!-- CASTER  WHEEL -->
+        <link name="${prefix}caster_link">
+            <visual>
+                <origin xyz="0.0 0.0 -0.015"/>
+                <geometry>
+                    <mesh filename="file://$(find puzzlebot_description)/meshes/Puzzlebot_Caster_Wheel.stl"/>
+                </geometry>
+                <material name="orange"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <sphere radius="0.02"/> 
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.016"/>
+                <xacro:solid_sphere_inertia  mass="0.016" radius="0.02"/>
+            </inertial>
+        </link>
 
-    <link name="caster_link">
-        <visual>
-            <origin xyz="0.0 0.0 -0.015"/>
-            <geometry>
-                <mesh filename="package://puzzlebot_description/meshes/Puzzlebot_Caster_Wheel.stl"/>
-            </geometry>
-            <material name="yellow">
-                <color rgba="0.8 0.8 0.05 1.0"/>
-            </material>
-        </visual>
-    </link>
-
-    <joint name="caster_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="caster_link"/>
-        <origin xyz="-0.095 0.0 -0.03"/>
-    </joint>
-
+        <joint name="${prefix}caster_joint" type="fixed">
+            <parent link="${prefix}base_link"/>
+            <child link="${prefix}caster_link"/>
+            <origin xyz="-0.095 0.0 -0.03"/>
+        </joint>
+    </xacro:macro>
 </robot>

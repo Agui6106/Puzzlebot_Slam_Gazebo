@@ -8,7 +8,7 @@
                 <render_engine>ogre2</render_engine>
             </plugin>
 
-            <plugin filename="gz-sim-diff-drive-systems"
+            <plugin filename="gz-sim-diff-drive-system"
             name="gz::sim::systems::DiffDrive">
                 <left_joint>${prefix}left_wheel_joint</left_joint>
                 <right_joint>${prefix}right_wheel_joint</right_joint>
