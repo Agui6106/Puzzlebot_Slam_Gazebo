@@ -137,14 +137,14 @@ controller_server:
       transform_tolerance: 0.2
       use_regulated_linear_velocity_scaling: true
       use_cost_regulated_linear_velocity_scaling: false #relevant
-      regulated_linear_scaling_min_radius: 0.10 #relevant
+      regulated_linear_scaling_min_radius: 0.1 #relevant
       regulated_linear_scaling_min_speed: 0.06
       use_fixed_curvature_lookahead: false
       curvature_lookahead_dist: 0.25
       use_collision_detection: false
       max_allowed_time_to_collision_up_to_carrot: 0.4 #relevant
       use_rotate_to_heading: true
-      rotate_to_heading_min_angle: 0.70 #relevant
+      rotate_to_heading_min_angle: 0.7 #relevant
       allow_reversing: false
       max_robot_pose_search_dist: 10.0
       interpolate_curvature_after_goal: false
